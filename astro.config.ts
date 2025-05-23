@@ -25,9 +25,12 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/sharp",
+    },
+  },
   experimental: {
     viewTransitions: true,
-    assets: true,
-    svgs: true,
   },
 });
